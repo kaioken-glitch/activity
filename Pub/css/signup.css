@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.gim{
+    width: 60%;
+    height: 743px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/Pub/images/d8f07620-66e9-452d-a06e-a263ad67608f.jpg);
+}
+
+.mig{
+    width: 40%;
+    height: 743px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #93a8af;
+}
+
+.mig p{
+    color: orangered;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-family: 'pico-8', sans-serif;
+}
+
+h1{
+    color: lime;
+    cursor: default;
+    font-family: 'pico-8', sans-serif;
+}
+
+span{
+    color: cyan;
+}
+
+form{
+    width: max-content;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input{
+    color: #fff;
+    width: 260px;
+    height: 30px;
+    border: none;
+    margin: 10px;
+    outline: none;
+    text-indent: 10px;
+    background-color: #2f2f2f2d;
+    font-family: 'pico-8', sans-serif;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+button{
+    color:#fff;
+    width: 100px;
+    height: 32px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background-color: orangered;
+    font-family: 'pico-8', sans-serif;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.era{
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    font-family: 'pico-8', sans-serif;
+}
+
+.era span{
+    color: lime;
+    margin-left: 5px;
+}
+
+.era span:hover{
+    border-bottom: 2px solid lime;
+}

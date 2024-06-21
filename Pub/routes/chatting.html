@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>base</title>
+    <link rel="stylesheet" href="/Pub/css/chatting.css">
+    <link rel="shortcut icon" href="/Pub/images/base-favicon-color.png" type="image/x-icon">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="chat-rooms">
+                <div class="srch">
+                    <input type="search" name="" id="" placeholder="Find Room">
+                    <button type="submit"><i class="fa-solid fa-search"></i></button>
+                </div>
+                <div class="mostActive">
+                </div>
+
+                <div class="activeChatroom">
+                </div>
+            </div>
+
+            <div class="chat-room">
+                <div class="mainWindow">
+                    <div class="top">
+                        <p>-------------Start of Conversation-------------</p>
+                    </div>
+
+                    <div class="chats" id="chatMessages">
+                    </div>
+                </div>
+
+                <div class="divide">
+                    <input  type="text" placeholder="Send a Message">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="mms">
+            <div class="tp">
+                <h1>:member-list</h1>
+                <p id="description"></p>
+            </div>
+            
+            <div class="ms">
+                <div class="lvo">
+                    <a id="counter">0/0</a>
+                    <p style="color: lime;">Members active</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="chatroomPopup" class="popup">
+        <div class="popup-content">
+            <h2>Create Chatroom</h2>
+            <label for="chatroomImage">Chatroom Image:</label>
+            <input type="file" id="chatroomImage" accept="image/*">
+            <label for="chatroomTitle">Chatroom Title:</label>
+            <input type="text" id="chatroomTitle" placeholder="Enter chatroom title">
+            <label for="chatroomDescription">Description:</label>
+            <textarea id="chatroomDescription" placeholder="Enter chatroom description"></textarea>
+            <button id="createChatroomButton">Create Chatroom</button>
+        </div>
+    </div>
+
+    <script src="/Pub/func/base.js"></script>
+    <script src="https://kit.fontawesome.com/826c469fe7.js" crossorigin="anonymous"></script>    
+</body>
+</html>

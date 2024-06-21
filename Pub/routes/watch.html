@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Together</title>
+    <link rel="stylesheet" href="/Pub/css/watch.css">
+    <link rel="shortcut icon" href="/Pub/images/base-favicon-color.png" type="image/x-icon">
+</head>
+<body>
+    <div class="logo">
+        <img src="/Pub/images/base-high-resolution-logo-white-transparent (1).png" alt="">
+    </div>
+    <div class="main">
+        <div class="vid">
+            <div class="video-search">
+                <input type="text" id="searchInput" placeholder="Search YouTube...">
+                <button id="searchButton">Search</button>
+            </div>
+            <div id="videoResults"></div>
+            <div id="videoPlayer" style="display: flex;">
+                <iframe id="youtubePlayer" frameborder="0" allowfullscreen autoplay></iframe>
+                <div id="ambientLight"></div>
+            </div>
+            <div class="atv">
+                <div class="owner">
+                    <img src="/Pub/images/base-favicon-color.png" alt="">
+                </div>
+                <p id="watchTitle" contenteditable="true">WatchTogether</p>
+                <div class="viewers">
+                    <i class="fa-solid fa-eye"></i>
+                    <p id="viewerCount">0</p>
+                </div>
+            </div>
+
+            <div id="description" class="descp">
+            </div>
+
+            <div class="queue">
+
+            </div>
+        </div>
+
+        <div class="chat">
+            <p contenteditable="true">Watch Together</p>
+            <h1>Live-Chat</h1>
+            <div class="chat-cont" id="chatMessages"></div>
+            <div class="reply">
+                <input type="text" id="chatInput" placeholder="Send a Message">
+                <button id="sendMessageButton"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="watchTogetherPopup" class="popup">
+        <div class="popup-content">
+            <span id="closePopup" class="close">&times;</span>
+            <h2>Setup WatchTogether</h2>
+            <label for="activityTitle">Title:</label>
+            <input type="text" id="activityTitle" placeholder="Enter title...">
+            <label for="activityDescription">Description:</label>
+            <textarea id="activityDescription" placeholder="Enter description..."></textarea>
+            <label for="moderatorsSelect">Select Moderators:</label>
+            <select id="moderatorsSelect" multiple></select>
+            <button id="startWatchTogether">Start</button>
+        </div>
+    </div>
+
+    <script src="/Pub/func/base.js"></script>
+    <script src="https://kit.fontawesome.com/826c469fe7.js" crossorigin="anonymous"></script>
+</body>
+</html>
